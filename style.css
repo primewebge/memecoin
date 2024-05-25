@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./background\ mel.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: "Bangers", system-ui;
+}
+
+a {
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero-Section */
+
+.buy {
+    margin-left: 5rem;
+}
+
+.hero-section {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-text h1 {
+    font-size: 120px;
+    -webkit-text-stroke: 5px black;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.link-img {
+    width: 60px;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-links {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 60px;
+    background: white;
+    border: 10px solid black;
+    border-radius: 20px;
+    padding: 10px 5px;
+}
+
+.buy {
+    text-wrap: nowrap;
+}
+
+.CA {
+    width: 100%;
+}
+
+.CA span {
+    font-size: 30px;
+}
+
+/* About */
+
+.how-to-buy,
+.token-details,
+.about {
+    text-align: center;
+    padding: 0px 50px;
+    margin-top: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-to-buy h1,
+.token-details h1,
+.about h1 {
+    font-size: 100px;
+    -webkit-text-stroke: 5px black;
+    color: white;
+}
+
+.about-wrapper {
+    padding: 60px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+.about-story,
+.main-img {
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.main-img img {
+    border-radius: 11px;
+    height: 100%;
+}
+
+.about-story p {
+    text-align: center;
+    border-radius: 12px;
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    padding: 25px;
+}
+
+/* TokenStats */
+
+.token-details {
+    width: 100%;
+}
+
+.stat-wrapper {
+    padding: 0 30px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.buy-card,
+.card {
+    background-color: black;
+    color: white;
+    border: 10px solid white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card h2 {
+    font-size: 60px;
+}
+
+.card span {
+    font-size: 40px;
+}
+
+/* How To Buy */
+
+.buy-guide {
+
+    margin: 40px auto;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.buy-card {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy-card img {
+    width: 80px;
+}
+
+/* Meme */
+
+.meme-card {
+    background-color: black;
+    margin: 100px auto;
+    border: 15px solid black;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.meme-card img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: auto;
+}
+
+
+
+@keyframes fireGlow {
+    0% {
+        background: linear-gradient(to top, #ffcc00, #ff9900, #ff6600, #ff3300, #cc0000, #ff3300, #ff6600, #ff9900, #ffcc00, #ffff00, #ffcc00);
+        /* Define gradient colors */
+        background-clip: text;
+        /* Clip text to background */
+        -webkit-text-fill-color: transparent;
+        /* Hide original text */
+    }
+
+    100% {
+        background: linear-gradient(to top, #ffcc00, #ff9900, #ff6600, #ff3300, #cc0000, #ff3300, #ff6600, #ff9900, #ffcc00, #ffff00, #ffcc00);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.buy {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    animation: fireGlow 1s infinite ease-in-out;
+}
+
+
+/* Meme Grid */
+
+.meme-grid {
+    
+    padding: 50px;
+    min-height: 400px;
+    width: 100%;
+    margin:  100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Four columns */
+    grid-template-rows: repeat(2, auto);
+    /* Two rows */
+    gap: 30px;
+}
+
+.single-meme {
+    border: 10px solid black;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-meme img {
+    border-radius: 10px;
+    width: 100%;
+    background-size: cover;
+}
